@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+		<script src="https://kit.fontawesome.com/09f8e8a168.js" crossorigin="anonymous"></script>	
+		<title>HTML FORM PROJECT</title>
+	</head>
+	<body>
+		<div class="container bg-light border" style="margin-top: 10px;">
+			<div class="py-2">
+				<h2>Payment Form Example</h2>
+			</div>
+		</div>
+		<div class="container border">
+			<p class="alert alert-danger my-3">Some fields are missing</p>
+			<form>
+				<div class="row form-group">
+	
+					<div class="col-lg-5">
+						<label for="inputcard">Card #</label>
+						<input type="number" class="form-control" id="inputcard" value="XXXXXXXXXXXX" required>
+						<div class="valid-feedback">
+							Looks good! </div>
+					</div>
+					<div class="col-lg-3">
+						<label for="inputcvc">CVC #</label>
+						<input type="number" class="form-control" id="inputcvc" required>
+					</div>
+					<div class="col-lg-4">
+						<label for="inputamount">Amount $</label>
+						<input type="number" class="form-control" id="inputamount" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-lg-6">
+						<label for="inputname">First Name</label>
+						<input type="text" class="form-control" id="inputname" required>
+					</div>
+					<div class="col-lg-6">
+						<label for="inputlast">Last Name</label>
+						<input type="text" class="form-control" id="inputlast" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-lg-6">
+						<label for="inputcity">City</label>
+						<input type="text" class="form-control" id="inputcity" required>
+					</div>
+					<div class="col-lg-3">
+						<label for="inputstate">State</label>
+						  <select id="inputState" class="form-control">
+							<option selected>Choose...</option>
+							<option value="1">Miranda</option>
+							<option value="2">Lara</option>
+							<option value="3">Zulia</option>
+						  </select>
+					</div>
+					<div class="col-lg-3">
+						<label for="inputposcod">Postal Code</label>
+						<input type="number" class="form-control" id="inputposcod" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-lg-6">
+						<h6 class="mt-2 mb-3">We accept</h6>
+						<div class="bg-secondary p-2 pe-0 d-inline rounded-1">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlinecheckbox1" value="option1" required>
+								<i class="fa-brands img-fluid fa-cc-mastercard font-size fa-lg" ></i>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" disabled>
+								<i class="fa-brands img-fluid fa-cc-visa font-size fa-lg" ></i>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+								<i class="fa-brands img-fluid fa-cc-paypal font-size fa-lg"></i>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" disabled>
+								<i class="fa-brands img-fluid fa-cc-amex font-size fa-lg"></i>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-6">
+						<H6 class="mt-2">Message</H6>
+						<textarea name="Message" class="form-control" id="inputmsg" rows="3" required></textarea>
+						<p style="font-size:13px">Add any text here.</p>
+					</div>
+				</div>
+
+				<div class="bg-light border row d-flex justify-content-end p-3 mt-4">
+					<div class="col-auto">
+						<button class="btn btn-secondary btn-sm" type="reset">Cancel</button>
+					</div>
+					<div class="col-auto">
+						<button type="submit" class="btn btn-primary btn-block btn-sm"> Send</button>
+					</div>
+
+			</form>
+			
+		</div>
+	</body>
+</html>
